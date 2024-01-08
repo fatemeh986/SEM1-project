@@ -2,7 +2,7 @@ import requests
 import folium
 
 def get_air_quality_data(lat, lon, api_key):
-    url = f"http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid=45e8ea657c8ce688e2a924ab4cb2457c"
+    url = f"http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={}"
     response = requests.get(url)
     if response.status_code == 200:
         return response.json()
