@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0e83dae42966ecbb0639564b148f6566 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0e83dae42966ecbb0639564b148f6566" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0e83dae42966ecbb0639564b148f6566 = L.map(
+                "map_0e83dae42966ecbb0639564b148f6566",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_df4af2a44bcbcd8dd2210aff5f144b39 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_df4af2a44bcbcd8dd2210aff5f144b39.addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+            var marker_1cc4f1d90a9626c16ef10d35901a5707 = L.marker(
+                [48.8566, 2.3522],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_5f1e3ef02c0012d4efc87155da59c78a = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_60da398a52c7189c84859b1c19d26911 = $(`<div id="html_60da398a52c7189c84859b1c19d26911" style="width: 100.0%; height: 100.0%;">City: Paris<br>PM2.5: 40.59<br>PM10: 46.87<br>NO2: 26.39</div>`)[0];
+                popup_5f1e3ef02c0012d4efc87155da59c78a.setContent(html_60da398a52c7189c84859b1c19d26911);
+            
+        
+
+        marker_1cc4f1d90a9626c16ef10d35901a5707.bindPopup(popup_5f1e3ef02c0012d4efc87155da59c78a)
+        ;
+
+        
+    
+    
+            var marker_c9a3c54e725fe9dc73f248aaa07700b7 = L.marker(
+                [33.6844, 73.0479],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_c84d0f1a3fa865af47bff1b5d3d7ea6d = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_ab41c5f47f5327139589f33ee199e548 = $(`<div id="html_ab41c5f47f5327139589f33ee199e548" style="width: 100.0%; height: 100.0%;">City: Islamabad<br>PM2.5: 232.62<br>PM10: 274.6<br>NO2: 146.69</div>`)[0];
+                popup_c84d0f1a3fa865af47bff1b5d3d7ea6d.setContent(html_ab41c5f47f5327139589f33ee199e548);
+            
+        
+
+        marker_c9a3c54e725fe9dc73f248aaa07700b7.bindPopup(popup_c84d0f1a3fa865af47bff1b5d3d7ea6d)
+        ;
+
+        
+    
+    
+            var marker_81d16f46cd7c7752c5616ecd15c5cb59 = L.marker(
+                [35.6892, 51.389],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_f4448fa6b1025fdf070193b32e5f83eb = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_1882a4023e4a7577c15286dda413cd31 = $(`<div id="html_1882a4023e4a7577c15286dda413cd31" style="width: 100.0%; height: 100.0%;">City: Tehran<br>PM2.5: 17.4<br>PM10: 23.59<br>NO2: 76.77</div>`)[0];
+                popup_f4448fa6b1025fdf070193b32e5f83eb.setContent(html_1882a4023e4a7577c15286dda413cd31);
+            
+        
+
+        marker_81d16f46cd7c7752c5616ecd15c5cb59.bindPopup(popup_f4448fa6b1025fdf070193b32e5f83eb)
+        ;
+
+        
+    
+    
+            var marker_e3f2c6126ba15611f6bf9d925422892d = L.marker(
+                [52.52, 13.405],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_ebea11659a75b4f4d6f03271f72b957a = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_3f69242bf0d8e0dccd44b7e529e50eb4 = $(`<div id="html_3f69242bf0d8e0dccd44b7e529e50eb4" style="width: 100.0%; height: 100.0%;">City: Berlin<br>PM2.5: 14.16<br>PM10: 15.31<br>NO2: 33.24</div>`)[0];
+                popup_ebea11659a75b4f4d6f03271f72b957a.setContent(html_3f69242bf0d8e0dccd44b7e529e50eb4);
+            
+        
+
+        marker_e3f2c6126ba15611f6bf9d925422892d.bindPopup(popup_ebea11659a75b4f4d6f03271f72b957a)
+        ;
+
+        
+    
+    
+            var marker_e36736497da0482810a55a2bb29c51f0 = L.marker(
+                [24.7136, 46.6753],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_747bd2b3884d857e03728666a806a9c4 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_e06fe1ceac33ae911f0b079c44b9dd2e = $(`<div id="html_e06fe1ceac33ae911f0b079c44b9dd2e" style="width: 100.0%; height: 100.0%;">City: Riyadh<br>PM2.5: 13.8<br>PM10: 58.77<br>NO2: 6.94</div>`)[0];
+                popup_747bd2b3884d857e03728666a806a9c4.setContent(html_e06fe1ceac33ae911f0b079c44b9dd2e);
+            
+        
+
+        marker_e36736497da0482810a55a2bb29c51f0.bindPopup(popup_747bd2b3884d857e03728666a806a9c4)
+        ;
+
+        
+    
+    
+            var marker_030e117de66b1001fecf133bdbdd1a44 = L.marker(
+                [39.9042, 116.4074],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_fb22e85c83ff8ee5749dcd3b5bfb2165 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_bf66d32214c5831b42a4b1d83801a59d = $(`<div id="html_bf66d32214c5831b42a4b1d83801a59d" style="width: 100.0%; height: 100.0%;">City: Beijing<br>PM2.5: 15.5<br>PM10: 20.79<br>NO2: 46.61</div>`)[0];
+                popup_fb22e85c83ff8ee5749dcd3b5bfb2165.setContent(html_bf66d32214c5831b42a4b1d83801a59d);
+            
+        
+
+        marker_030e117de66b1001fecf133bdbdd1a44.bindPopup(popup_fb22e85c83ff8ee5749dcd3b5bfb2165)
+        ;
+
+        
+    
+    
+            var marker_f4609a16a023a91bf74d5710bead6857 = L.marker(
+                [38.8951, -77.0364],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_1bbcaa439bda53f220a528f08f0d48bc = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_548ca1a5b74dad6e094669043628e5b6 = $(`<div id="html_548ca1a5b74dad6e094669043628e5b6" style="width: 100.0%; height: 100.0%;">City: Washington<br>PM2.5: 10.68<br>PM10: 13.1<br>NO2: 20.05</div>`)[0];
+                popup_1bbcaa439bda53f220a528f08f0d48bc.setContent(html_548ca1a5b74dad6e094669043628e5b6);
+            
+        
+
+        marker_f4609a16a023a91bf74d5710bead6857.bindPopup(popup_1bbcaa439bda53f220a528f08f0d48bc)
+        ;
+
+        
+    
+    
+            var marker_3967907e0740c53cb4436cd4d7f771d3 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_39dcebdd3450278f95d651cb720fd740 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_6dc32eb534835ca23b856fa9f2099ea1 = $(`<div id="html_6dc32eb534835ca23b856fa9f2099ea1" style="width: 100.0%; height: 100.0%;">City: New York<br>PM2.5: 17.34<br>PM10: 20.36<br>NO2: 27.08</div>`)[0];
+                popup_39dcebdd3450278f95d651cb720fd740.setContent(html_6dc32eb534835ca23b856fa9f2099ea1);
+            
+        
+
+        marker_3967907e0740c53cb4436cd4d7f771d3.bindPopup(popup_39dcebdd3450278f95d651cb720fd740)
+        ;
+
+        
+    
+    
+            var marker_be05c46be8ea19e2c8b897f0b380c084 = L.marker(
+                [55.6761, 12.5683],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_a01e472e3d98e9402487c7e82ef2afc4 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_ac20e993f087f83738d2feeeffb1ec22 = $(`<div id="html_ac20e993f087f83738d2feeeffb1ec22" style="width: 100.0%; height: 100.0%;">City: Copenhagen<br>PM2.5: 5.46<br>PM10: 6.64<br>NO2: 10.54</div>`)[0];
+                popup_a01e472e3d98e9402487c7e82ef2afc4.setContent(html_ac20e993f087f83738d2feeeffb1ec22);
+            
+        
+
+        marker_be05c46be8ea19e2c8b897f0b380c084.bindPopup(popup_a01e472e3d98e9402487c7e82ef2afc4)
+        ;
+
+        
+    
+    
+            var marker_b28aa4cb6fc71978715148d435badd5e = L.marker(
+                [52.3676, 4.9041],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_86ff065c35adc915e12c2d6aff60aeab = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_dcb1af546ec0b7a8cbdd1115c2f3c75f = $(`<div id="html_dcb1af546ec0b7a8cbdd1115c2f3c75f" style="width: 100.0%; height: 100.0%;">City: Amsterdam<br>PM2.5: 4.09<br>PM10: 14.55<br>NO2: 28.1</div>`)[0];
+                popup_86ff065c35adc915e12c2d6aff60aeab.setContent(html_dcb1af546ec0b7a8cbdd1115c2f3c75f);
+            
+        
+
+        marker_b28aa4cb6fc71978715148d435badd5e.bindPopup(popup_86ff065c35adc915e12c2d6aff60aeab)
+        ;
+
+        
+    
+    
+            var marker_fff94e5b706e8d245ac503b06db5e5dd = L.marker(
+                [40.4168, -3.7038],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_20ba717cfc29af5c0cb9bd5c7206d781 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_743423ed11541af064dc12dd41dab709 = $(`<div id="html_743423ed11541af064dc12dd41dab709" style="width: 100.0%; height: 100.0%;">City: Madrid<br>PM2.5: 9.86<br>PM10: 13.24<br>NO2: 25.02</div>`)[0];
+                popup_20ba717cfc29af5c0cb9bd5c7206d781.setContent(html_743423ed11541af064dc12dd41dab709);
+            
+        
+
+        marker_fff94e5b706e8d245ac503b06db5e5dd.bindPopup(popup_20ba717cfc29af5c0cb9bd5c7206d781)
+        ;
+
+        
+    
+    
+            var marker_cb767f6513bb7720a1774196e3a2ba4a = L.marker(
+                [51.5074, -0.1278],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_c4b019d5977c20c70984bbaea742f6f6 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_2dc78773074d8f1c58f1cb75b4d42cc3 = $(`<div id="html_2dc78773074d8f1c58f1cb75b4d42cc3" style="width: 100.0%; height: 100.0%;">City: London<br>PM2.5: 10.01<br>PM10: 15.21<br>NO2: 43.53</div>`)[0];
+                popup_c4b019d5977c20c70984bbaea742f6f6.setContent(html_2dc78773074d8f1c58f1cb75b4d42cc3);
+            
+        
+
+        marker_cb767f6513bb7720a1774196e3a2ba4a.bindPopup(popup_c4b019d5977c20c70984bbaea742f6f6)
+        ;
+
+        
+    
+    
+            var marker_aa9f667314bd654c630209ea51dcf7f7 = L.marker(
+                [-15.8267, -47.9218],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_c451ed816da425bca3e5628d531530f0 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_8a7f898e08fb713751f4d1a6fb58c681 = $(`<div id="html_8a7f898e08fb713751f4d1a6fb58c681" style="width: 100.0%; height: 100.0%;">City: Brasilia<br>PM2.5: 7.38<br>PM10: 13.12<br>NO2: 38.73</div>`)[0];
+                popup_c451ed816da425bca3e5628d531530f0.setContent(html_8a7f898e08fb713751f4d1a6fb58c681);
+            
+        
+
+        marker_aa9f667314bd654c630209ea51dcf7f7.bindPopup(popup_c451ed816da425bca3e5628d531530f0)
+        ;
+
+        
+    
+    
+            var marker_41b68a0a0f331de3a9310f513be6503a = L.marker(
+                [45.4215, -75.6972],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_48f08e0ddd13bc111b663b6c93b0701f = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_366570618148b192938ae4cc92229a08 = $(`<div id="html_366570618148b192938ae4cc92229a08" style="width: 100.0%; height: 100.0%;">City: Ottawa<br>PM2.5: 9.47<br>PM10: 10.56<br>NO2: 3.34</div>`)[0];
+                popup_48f08e0ddd13bc111b663b6c93b0701f.setContent(html_366570618148b192938ae4cc92229a08);
+            
+        
+
+        marker_41b68a0a0f331de3a9310f513be6503a.bindPopup(popup_48f08e0ddd13bc111b663b6c93b0701f)
+        ;
+
+        
+    
+    
+            var marker_d394284cf3f75c0c7f93856dff774228 = L.marker(
+                [-15.8267, -47.9218],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_54f5a635e8fab47758305a3d63df5aa7 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_3b91a3c47f38e91abb592b2b4c79850a = $(`<div id="html_3b91a3c47f38e91abb592b2b4c79850a" style="width: 100.0%; height: 100.0%;">City: Brasilia<br>PM2.5: 7.38<br>PM10: 13.12<br>NO2: 38.73</div>`)[0];
+                popup_54f5a635e8fab47758305a3d63df5aa7.setContent(html_3b91a3c47f38e91abb592b2b4c79850a);
+            
+        
+
+        marker_d394284cf3f75c0c7f93856dff774228.bindPopup(popup_54f5a635e8fab47758305a3d63df5aa7)
+        ;
+
+        
+    
+    
+            var marker_245e00ae4d4e1bf0e3a1cbe8c8bcb6b0 = L.marker(
+                [45.4215, -75.6972],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_08d55a1fc8e60f7bacb50522329930f1 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_04f046e4a70aa3a7b985b258c5ff4e80 = $(`<div id="html_04f046e4a70aa3a7b985b258c5ff4e80" style="width: 100.0%; height: 100.0%;">City: Ottawa<br>PM2.5: 9.47<br>PM10: 10.56<br>NO2: 3.34</div>`)[0];
+                popup_08d55a1fc8e60f7bacb50522329930f1.setContent(html_04f046e4a70aa3a7b985b258c5ff4e80);
+            
+        
+
+        marker_245e00ae4d4e1bf0e3a1cbe8c8bcb6b0.bindPopup(popup_08d55a1fc8e60f7bacb50522329930f1)
+        ;
+
+        
+    
+    
+            var marker_d2ae0ba76356b0518380f6be41d359ca = L.marker(
+                [19.4326, -99.1332],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_5ebd608b0e236de2db66f6958c800f20 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_7637ddf611dc82ef731cd168f81cb4ef = $(`<div id="html_7637ddf611dc82ef731cd168f81cb4ef" style="width: 100.0%; height: 100.0%;">City: Mexico City<br>PM2.5: 9.38<br>PM10: 11.47<br>NO2: 20.05</div>`)[0];
+                popup_5ebd608b0e236de2db66f6958c800f20.setContent(html_7637ddf611dc82ef731cd168f81cb4ef);
+            
+        
+
+        marker_d2ae0ba76356b0518380f6be41d359ca.bindPopup(popup_5ebd608b0e236de2db66f6958c800f20)
+        ;
+
+        
+    
+    
+            var marker_2742eafd7019854ae277e87ca7b9f3b8 = L.marker(
+                [-34.6037, -58.3816],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_578e8767ff49cdb9c494c8e14a0091a4 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_907cd28d96519dfcf7edef1f8bd5dadc = $(`<div id="html_907cd28d96519dfcf7edef1f8bd5dadc" style="width: 100.0%; height: 100.0%;">City: Buenos Aires<br>PM2.5: 3.66<br>PM10: 4.46<br>NO2: 13.88</div>`)[0];
+                popup_578e8767ff49cdb9c494c8e14a0091a4.setContent(html_907cd28d96519dfcf7edef1f8bd5dadc);
+            
+        
+
+        marker_2742eafd7019854ae277e87ca7b9f3b8.bindPopup(popup_578e8767ff49cdb9c494c8e14a0091a4)
+        ;
+
+        
+    
+    
+            var marker_598f12e646e35a4d1c82fb750ff65b52 = L.marker(
+                [4.711, -74.0721],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_25e3ecc9035d100c29abfe4d1758f25b = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_0f69a06b7c27e393eb7039bf49cb1831 = $(`<div id="html_0f69a06b7c27e393eb7039bf49cb1831" style="width: 100.0%; height: 100.0%;">City: Bogota<br>PM2.5: 14.87<br>PM10: 18.77<br>NO2: 17.82</div>`)[0];
+                popup_25e3ecc9035d100c29abfe4d1758f25b.setContent(html_0f69a06b7c27e393eb7039bf49cb1831);
+            
+        
+
+        marker_598f12e646e35a4d1c82fb750ff65b52.bindPopup(popup_25e3ecc9035d100c29abfe4d1758f25b)
+        ;
+
+        
+    
+    
+            var marker_f3a55f72f2d4c01c9e85f729627b5396 = L.marker(
+                [46.948, 7.4474],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_bfcdc16dd3813b8a511bc53f806b4494 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_3b46884f3b44492ab3add6c40240448e = $(`<div id="html_3b46884f3b44492ab3add6c40240448e" style="width: 100.0%; height: 100.0%;">City: Bern<br>PM2.5: 27.85<br>PM10: 29.67<br>NO2: 31.87</div>`)[0];
+                popup_bfcdc16dd3813b8a511bc53f806b4494.setContent(html_3b46884f3b44492ab3add6c40240448e);
+            
+        
+
+        marker_f3a55f72f2d4c01c9e85f729627b5396.bindPopup(popup_bfcdc16dd3813b8a511bc53f806b4494)
+        ;
+
+        
+    
+    
+            var marker_75f2ab6c592d54a7d1a35dc52f1d6d50 = L.marker(
+                [48.2082, 16.3738],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_e3795fe5b67701e63e06a394af7641f9 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_910e3fbfe6598749c89f7b09a45c783f = $(`<div id="html_910e3fbfe6598749c89f7b09a45c783f" style="width: 100.0%; height: 100.0%;">City: Vienna<br>PM2.5: 3.37<br>PM10: 3.84<br>NO2: 12</div>`)[0];
+                popup_e3795fe5b67701e63e06a394af7641f9.setContent(html_910e3fbfe6598749c89f7b09a45c783f);
+            
+        
+
+        marker_75f2ab6c592d54a7d1a35dc52f1d6d50.bindPopup(popup_e3795fe5b67701e63e06a394af7641f9)
+        ;
+
+        
+    
+    
+            var marker_d6c435d0870781f69e85c20ea5806190 = L.marker(
+                [-35.282, 149.1286],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_0757363d6ca8af9bac5a61b92821a35c = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_2096070ee9bfb680b1982755136febeb = $(`<div id="html_2096070ee9bfb680b1982755136febeb" style="width: 100.0%; height: 100.0%;">City: Canberra<br>PM2.5: 1.1<br>PM10: 2.19<br>NO2: 2.51</div>`)[0];
+                popup_0757363d6ca8af9bac5a61b92821a35c.setContent(html_2096070ee9bfb680b1982755136febeb);
+            
+        
+
+        marker_d6c435d0870781f69e85c20ea5806190.bindPopup(popup_0757363d6ca8af9bac5a61b92821a35c)
+        ;
+
+        
+    
+    
+            var marker_bc8a0baabc5bbc931ed2cd0d80e53a5b = L.marker(
+                [59.3293, 18.0686],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_4576e28fdd631c892d9226229a79f8b1 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_a7e7cff9a0d01819e742be76338e2a16 = $(`<div id="html_a7e7cff9a0d01819e742be76338e2a16" style="width: 100.0%; height: 100.0%;">City: Stockholm<br>PM2.5: 3.87<br>PM10: 7.72<br>NO2: 25.71</div>`)[0];
+                popup_4576e28fdd631c892d9226229a79f8b1.setContent(html_a7e7cff9a0d01819e742be76338e2a16);
+            
+        
+
+        marker_bc8a0baabc5bbc931ed2cd0d80e53a5b.bindPopup(popup_4576e28fdd631c892d9226229a79f8b1)
+        ;
+
+        
+    
+    
+            var marker_876df39bcd225cb3177189fdf772ac0b = L.marker(
+                [50.8503, 4.3517],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_d7de34c7cecd424ae97e26c0664f16bf = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_caaa9df5235abf13e3ecb99385aa82e7 = $(`<div id="html_caaa9df5235abf13e3ecb99385aa82e7" style="width: 100.0%; height: 100.0%;">City: Brussels<br>PM2.5: 14.2<br>PM10: 17.03<br>NO2: 29.82</div>`)[0];
+                popup_d7de34c7cecd424ae97e26c0664f16bf.setContent(html_caaa9df5235abf13e3ecb99385aa82e7);
+            
+        
+
+        marker_876df39bcd225cb3177189fdf772ac0b.bindPopup(popup_d7de34c7cecd424ae97e26c0664f16bf)
+        ;
+
+        
+    
+    
+            var marker_cf7983261b4d60d9946a4658a6fe9e64 = L.marker(
+                [50.4501, 30.5234],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_9e01927563ac3ccf499d5f1bdbbf66cc = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_44bb9bfd3fd2200b6b34bf66ef45b926 = $(`<div id="html_44bb9bfd3fd2200b6b34bf66ef45b926" style="width: 100.0%; height: 100.0%;">City: Kiev<br>PM2.5: 7.14<br>PM10: 7.67<br>NO2: 5.83</div>`)[0];
+                popup_9e01927563ac3ccf499d5f1bdbbf66cc.setContent(html_44bb9bfd3fd2200b6b34bf66ef45b926);
+            
+        
+
+        marker_cf7983261b4d60d9946a4658a6fe9e64.bindPopup(popup_9e01927563ac3ccf499d5f1bdbbf66cc)
+        ;
+
+        
+    
+    
+            var marker_d59da7676c78354a13ac3290f352c8cd = L.marker(
+                [55.7558, 37.6176],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_3b4dd6b4c6673d08f0fcd6de45ae0b66 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_f2b535f62153a107df6db8f3e46fb0ae = $(`<div id="html_f2b535f62153a107df6db8f3e46fb0ae" style="width: 100.0%; height: 100.0%;">City: Moscow<br>PM2.5: 6.88<br>PM10: 9.04<br>NO2: 33.59</div>`)[0];
+                popup_3b4dd6b4c6673d08f0fcd6de45ae0b66.setContent(html_f2b535f62153a107df6db8f3e46fb0ae);
+            
+        
+
+        marker_d59da7676c78354a13ac3290f352c8cd.bindPopup(popup_3b4dd6b4c6673d08f0fcd6de45ae0b66)
+        ;
+
+        
+    
+    
+            var marker_371cd7129c9c514ae56a32fa9198d0cc = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_0565d6c498eaad072e478adfbb4150bd = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_14171f019e327009a2713cdd5f79e865 = $(`<div id="html_14171f019e327009a2713cdd5f79e865" style="width: 100.0%; height: 100.0%;">City: Tokyo<br>PM2.5: 25.08<br>PM10: 31.48<br>NO2: 65.12</div>`)[0];
+                popup_0565d6c498eaad072e478adfbb4150bd.setContent(html_14171f019e327009a2713cdd5f79e865);
+            
+        
+
+        marker_371cd7129c9c514ae56a32fa9198d0cc.bindPopup(popup_0565d6c498eaad072e478adfbb4150bd)
+        ;
+
+        
+    
+    
+            var marker_e27776fed8a003e9c554314e2fd83062 = L.marker(
+                [13.7563, 100.5018],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_e1204d3df3b707a5462520b3af59e1ec = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_e7172dd5a72c9fbe3b410a5cc99d8189 = $(`<div id="html_e7172dd5a72c9fbe3b410a5cc99d8189" style="width: 100.0%; height: 100.0%;">City: Bangkok<br>PM2.5: 90.54<br>PM10: 135.98<br>NO2: 139.83</div>`)[0];
+                popup_e1204d3df3b707a5462520b3af59e1ec.setContent(html_e7172dd5a72c9fbe3b410a5cc99d8189);
+            
+        
+
+        marker_e27776fed8a003e9c554314e2fd83062.bindPopup(popup_e1204d3df3b707a5462520b3af59e1ec)
+        ;
+
+        
+    
+    
+            var marker_11efc6c7eb20e6a030d41939ec56c50c = L.marker(
+                [28.6139, 77.209],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_d667cabd4233fb0f63c4873ef2e7ff45 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_61f53ff2a347b61b0dd2e46c82c893fc = $(`<div id="html_61f53ff2a347b61b0dd2e46c82c893fc" style="width: 100.0%; height: 100.0%;">City: New Delhi<br>PM2.5: 262.63<br>PM10: 317.93<br>NO2: 33.24</div>`)[0];
+                popup_d667cabd4233fb0f63c4873ef2e7ff45.setContent(html_61f53ff2a347b61b0dd2e46c82c893fc);
+            
+        
+
+        marker_11efc6c7eb20e6a030d41939ec56c50c.bindPopup(popup_d667cabd4233fb0f63c4873ef2e7ff45)
+        ;
+
+        
+    
+    
+            var marker_cbf817997a6645e116f8716a1fae20fc = L.marker(
+                [22.3193, 114.1694],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_94ccae3733a33b4b47e1c98302e8ec8f = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_a7d748d046e87540b39ff53a1a984143 = $(`<div id="html_a7d748d046e87540b39ff53a1a984143" style="width: 100.0%; height: 100.0%;">City: Hong Kong<br>PM2.5: 76.51<br>PM10: 102.82<br>NO2: 112.41</div>`)[0];
+                popup_94ccae3733a33b4b47e1c98302e8ec8f.setContent(html_a7d748d046e87540b39ff53a1a984143);
+            
+        
+
+        marker_cbf817997a6645e116f8716a1fae20fc.bindPopup(popup_94ccae3733a33b4b47e1c98302e8ec8f)
+        ;
+
+        
+    
+    
+            var marker_5f646dd12aa01d2f759adeceab8fec83 = L.marker(
+                [37.5665, 126.978],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_ee81f52a66d116f8396494c2476df492 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_4e1d4e777099524b138570ca26137be9 = $(`<div id="html_4e1d4e777099524b138570ca26137be9" style="width: 100.0%; height: 100.0%;">City: Seoul<br>PM2.5: 3.46<br>PM10: 5.68<br>NO2: 54.15</div>`)[0];
+                popup_ee81f52a66d116f8396494c2476df492.setContent(html_4e1d4e777099524b138570ca26137be9);
+            
+        
+
+        marker_5f646dd12aa01d2f759adeceab8fec83.bindPopup(popup_ee81f52a66d116f8396494c2476df492)
+        ;
+
+        
+    
+    
+            var marker_f71f1ff4f723c82ac655f867d1eb65d1 = L.marker(
+                [39.0392, 125.7625],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_6559d51f27a62f6e421cdfafdd9f534e = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_698af3f9d4a7c907dd980d42930e12bf = $(`<div id="html_698af3f9d4a7c907dd980d42930e12bf" style="width: 100.0%; height: 100.0%;">City: Pyongyang<br>PM2.5: 12.42<br>PM10: 18.07<br>NO2: 14.57</div>`)[0];
+                popup_6559d51f27a62f6e421cdfafdd9f534e.setContent(html_698af3f9d4a7c907dd980d42930e12bf);
+            
+        
+
+        marker_f71f1ff4f723c82ac655f867d1eb65d1.bindPopup(popup_6559d51f27a62f6e421cdfafdd9f534e)
+        ;
+
+        
+    
+    
+            var marker_4d5cdd28bb565d5548ddc1b9a6af3d81 = L.marker(
+                [33.3152, 44.3661],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_b4cb9669aa477e37fdfb028709ec2590 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_9a973c8a06b5f847d9a70d40e40221ca = $(`<div id="html_9a973c8a06b5f847d9a70d40e40221ca" style="width: 100.0%; height: 100.0%;">City: Baghdad<br>PM2.5: 31.44<br>PM10: 103.62<br>NO2: 14.91</div>`)[0];
+                popup_b4cb9669aa477e37fdfb028709ec2590.setContent(html_9a973c8a06b5f847d9a70d40e40221ca);
+            
+        
+
+        marker_4d5cdd28bb565d5548ddc1b9a6af3d81.bindPopup(popup_b4cb9669aa477e37fdfb028709ec2590)
+        ;
+
+        
+    
+    
+            var marker_0210ad14040127da5849a71a432a76b8 = L.marker(
+                [33.5138, 36.2765],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_ddb639b80ccbd3b1e57d93f116cadfb1 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_2c901b07de9afedc67749fc08e7ca58f = $(`<div id="html_2c901b07de9afedc67749fc08e7ca58f" style="width: 100.0%; height: 100.0%;">City: Damascus<br>PM2.5: 21.23<br>PM10: 48.72<br>NO2: 12.85</div>`)[0];
+                popup_ddb639b80ccbd3b1e57d93f116cadfb1.setContent(html_2c901b07de9afedc67749fc08e7ca58f);
+            
+        
+
+        marker_0210ad14040127da5849a71a432a76b8.bindPopup(popup_ddb639b80ccbd3b1e57d93f116cadfb1)
+        ;
+
+        
+    
+    
+            var marker_ab7f3b28d1d8bb7367cf93247a8dc8ec = L.marker(
+                [29.3759, 47.9774],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_f7c7aa086572d29018314a233c26be1c = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_78cd6cd5ec1cbb5a9a043a38a256c3e5 = $(`<div id="html_78cd6cd5ec1cbb5a9a043a38a256c3e5" style="width: 100.0%; height: 100.0%;">City: Kuwait City<br>PM2.5: 22.87<br>PM10: 100.33<br>NO2: 2.59</div>`)[0];
+                popup_f7c7aa086572d29018314a233c26be1c.setContent(html_78cd6cd5ec1cbb5a9a043a38a256c3e5);
+            
+        
+
+        marker_ab7f3b28d1d8bb7367cf93247a8dc8ec.bindPopup(popup_f7c7aa086572d29018314a233c26be1c)
+        ;
+
+        
+    
+    
+            var marker_d32e5be890ff648a88eed4c18aa39ebf = L.marker(
+                [26.2285, 50.586],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_b22cf34d16335882690e04998574b0a2 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_7aa2f4a2a63c791b853d6c153452fabc = $(`<div id="html_7aa2f4a2a63c791b853d6c153452fabc" style="width: 100.0%; height: 100.0%;">City: Manama<br>PM2.5: 25.2<br>PM10: 62.44<br>NO2: 23.65</div>`)[0];
+                popup_b22cf34d16335882690e04998574b0a2.setContent(html_7aa2f4a2a63c791b853d6c153452fabc);
+            
+        
+
+        marker_d32e5be890ff648a88eed4c18aa39ebf.bindPopup(popup_b22cf34d16335882690e04998574b0a2)
+        ;
+
+        
+    
+    
+            var marker_99ace73f1377661ad5659f0d4cdbf143 = L.marker(
+                [31.9522, 35.2332],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_8991877734fd518cb717c49896fc8b43 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_8e8011825c27cbdff4c582b3a9f4d270 = $(`<div id="html_8e8011825c27cbdff4c582b3a9f4d270" style="width: 100.0%; height: 100.0%;">City: Amman<br>PM2.5: 7.19<br>PM10: 15.54<br>NO2: 2.08</div>`)[0];
+                popup_8991877734fd518cb717c49896fc8b43.setContent(html_8e8011825c27cbdff4c582b3a9f4d270);
+            
+        
+
+        marker_99ace73f1377661ad5659f0d4cdbf143.bindPopup(popup_8991877734fd518cb717c49896fc8b43)
+        ;
+
+        
+    
+    
+            var marker_45b041d078b0182f29f10a030bc9928a = L.marker(
+                [24.4539, 54.3773],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_90595eed595d65acc0ece70d8bdcecc7 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_019852624d44b23adec7610e1357c81d = $(`<div id="html_019852624d44b23adec7610e1357c81d" style="width: 100.0%; height: 100.0%;">City: Abu Dhabi<br>PM2.5: 12.87<br>PM10: 26.24<br>NO2: 0.69</div>`)[0];
+                popup_90595eed595d65acc0ece70d8bdcecc7.setContent(html_019852624d44b23adec7610e1357c81d);
+            
+        
+
+        marker_45b041d078b0182f29f10a030bc9928a.bindPopup(popup_90595eed595d65acc0ece70d8bdcecc7)
+        ;
+
+        
+    
+    
+            var marker_4f33be20fbe205de08765cd9cc960d58 = L.marker(
+                [34.5553, 69.2075],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_df1c400cf32711d52ce254de5db1bd4b = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_faec3aff30422e5fbb388b192df02572 = $(`<div id="html_faec3aff30422e5fbb388b192df02572" style="width: 100.0%; height: 100.0%;">City: Kabul<br>PM2.5: 19.41<br>PM10: 29.94<br>NO2: 16.45</div>`)[0];
+                popup_df1c400cf32711d52ce254de5db1bd4b.setContent(html_faec3aff30422e5fbb388b192df02572);
+            
+        
+
+        marker_4f33be20fbe205de08765cd9cc960d58.bindPopup(popup_df1c400cf32711d52ce254de5db1bd4b)
+        ;
+
+        
+    
+    
+            var marker_3d74f29f2e4e7c0eff231d576dcf11b9 = L.marker(
+                [40.4093, 49.8671],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_46e3c60b97654e5a1ec4c6fa98f9cede = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_cd9651faedb5b19433eb777158e0d9e9 = $(`<div id="html_cd9651faedb5b19433eb777158e0d9e9" style="width: 100.0%; height: 100.0%;">City: Baku<br>PM2.5: 3.81<br>PM10: 4.39<br>NO2: 13.2</div>`)[0];
+                popup_46e3c60b97654e5a1ec4c6fa98f9cede.setContent(html_cd9651faedb5b19433eb777158e0d9e9);
+            
+        
+
+        marker_3d74f29f2e4e7c0eff231d576dcf11b9.bindPopup(popup_46e3c60b97654e5a1ec4c6fa98f9cede)
+        ;
+
+        
+    
+    
+            var marker_6d4466325f110f33113cc2583b988037 = L.marker(
+                [39.9334, 32.8597],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_ab45993f3fa2f1d07d11197acb1611f7 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_c8d2753ad0105623b50df6f8f05a387a = $(`<div id="html_c8d2753ad0105623b50df6f8f05a387a" style="width: 100.0%; height: 100.0%;">City: Ankara<br>PM2.5: 53.3<br>PM10: 61.19<br>NO2: 47.3</div>`)[0];
+                popup_ab45993f3fa2f1d07d11197acb1611f7.setContent(html_c8d2753ad0105623b50df6f8f05a387a);
+            
+        
+
+        marker_6d4466325f110f33113cc2583b988037.bindPopup(popup_ab45993f3fa2f1d07d11197acb1611f7)
+        ;
+
+        
+    
+    
+            var marker_9f0ee5f69661681644615df2b53707b0 = L.marker(
+                [9.0765, 7.3986],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_1e8e1ebd7d89bd3a824c76d31463c980 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_ed7ff24d7f8f1e97de5354ee32a465b0 = $(`<div id="html_ed7ff24d7f8f1e97de5354ee32a465b0" style="width: 100.0%; height: 100.0%;">City: Abuja<br>PM2.5: 168.2<br>PM10: 548.83<br>NO2: 1.35</div>`)[0];
+                popup_1e8e1ebd7d89bd3a824c76d31463c980.setContent(html_ed7ff24d7f8f1e97de5354ee32a465b0);
+            
+        
+
+        marker_9f0ee5f69661681644615df2b53707b0.bindPopup(popup_1e8e1ebd7d89bd3a824c76d31463c980)
+        ;
+
+        
+    
+    
+            var marker_1f0c0776968d40c9ca8b4875591e7b13 = L.marker(
+                [30.0444, 31.2357],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_ffd562da38076e3b7811986f4826a90a = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_fbc5e52f93515304137b7368a3282bab = $(`<div id="html_fbc5e52f93515304137b7368a3282bab" style="width: 100.0%; height: 100.0%;">City: Cairo<br>PM2.5: 16.41<br>PM10: 46.69<br>NO2: 12.68</div>`)[0];
+                popup_ffd562da38076e3b7811986f4826a90a.setContent(html_fbc5e52f93515304137b7368a3282bab);
+            
+        
+
+        marker_1f0c0776968d40c9ca8b4875591e7b13.bindPopup(popup_ffd562da38076e3b7811986f4826a90a)
+        ;
+
+        
+    
+    
+            var marker_1c4df9a04901a9ac73d0264adcdad5f6 = L.marker(
+                [34.0209, -6.8415],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_3aa8304452b34bd1f791be3c25a7b15c = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_f013845aa2dd518862afc4b3dd3c4183 = $(`<div id="html_f013845aa2dd518862afc4b3dd3c4183" style="width: 100.0%; height: 100.0%;">City: Rabat<br>PM2.5: 4.6<br>PM10: 11.24<br>NO2: 4.03</div>`)[0];
+                popup_3aa8304452b34bd1f791be3c25a7b15c.setContent(html_f013845aa2dd518862afc4b3dd3c4183);
+            
+        
+
+        marker_1c4df9a04901a9ac73d0264adcdad5f6.bindPopup(popup_3aa8304452b34bd1f791be3c25a7b15c)
+        ;
+
+        
+    
+    
+            var marker_cab8800425593bf9c5fb1bd738c1ab16 = L.marker(
+                [36.7372, 3.087],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_90ef09153c95a754bbb61f65214846b8 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_7f06d7f41fa7f71484692be45ca2bf69 = $(`<div id="html_7f06d7f41fa7f71484692be45ca2bf69" style="width: 100.0%; height: 100.0%;">City: Algiers<br>PM2.5: 0.93<br>PM10: 2.72<br>NO2: 14.4</div>`)[0];
+                popup_90ef09153c95a754bbb61f65214846b8.setContent(html_7f06d7f41fa7f71484692be45ca2bf69);
+            
+        
+
+        marker_cab8800425593bf9c5fb1bd738c1ab16.bindPopup(popup_90ef09153c95a754bbb61f65214846b8)
+        ;
+
+        
+    
+    
+            var marker_54836c1f40ef48790c31623ee3133c6e = L.marker(
+                [-25.7463, 28.1876],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_45c746c5495b02e54c1fae5188dc1b8b = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_d789eaa10019cbe08dc099dc4067e3ef = $(`<div id="html_d789eaa10019cbe08dc099dc4067e3ef" style="width: 100.0%; height: 100.0%;">City: Pretoria<br>PM2.5: 3.18<br>PM10: 6.7<br>NO2: 1.54</div>`)[0];
+                popup_45c746c5495b02e54c1fae5188dc1b8b.setContent(html_d789eaa10019cbe08dc099dc4067e3ef);
+            
+        
+
+        marker_54836c1f40ef48790c31623ee3133c6e.bindPopup(popup_45c746c5495b02e54c1fae5188dc1b8b)
+        ;
+
+        
+    
+    
+            var marker_9027ace249040b5872498681486e939f = L.marker(
+                [-4.4419, 15.2663],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_5923d9b0966710f88da79ec795ecf560 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_3677291e0f29f70c2c4c6f6d5d74b2f0 = $(`<div id="html_3677291e0f29f70c2c4c6f6d5d74b2f0" style="width: 100.0%; height: 100.0%;">City: Kinshasa<br>PM2.5: 47.56<br>PM10: 70.92<br>NO2: 12.85</div>`)[0];
+                popup_5923d9b0966710f88da79ec795ecf560.setContent(html_3677291e0f29f70c2c4c6f6d5d74b2f0);
+            
+        
+
+        marker_9027ace249040b5872498681486e939f.bindPopup(popup_5923d9b0966710f88da79ec795ecf560)
+        ;
+
+        
+    
+    
+            var marker_34cc6655447b659101c12c1eb627d715 = L.marker(
+                [60.1695, 24.9354],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_32e52882f2af52ac83b5aaf0d55c52e3 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_52c4854ac81182f03d2f3fb873b1ce42 = $(`<div id="html_52c4854ac81182f03d2f3fb873b1ce42" style="width: 100.0%; height: 100.0%;">City: Helsinki<br>PM2.5: 39.22<br>PM10: 48.3<br>NO2: 25.36</div>`)[0];
+                popup_32e52882f2af52ac83b5aaf0d55c52e3.setContent(html_52c4854ac81182f03d2f3fb873b1ce42);
+            
+        
+
+        marker_34cc6655447b659101c12c1eb627d715.bindPopup(popup_32e52882f2af52ac83b5aaf0d55c52e3)
+        ;
+
+        
+    
+    
+            var marker_070ed9e7aa4e0d8e857c7a4de43220c9 = L.marker(
+                [53.3498, -6.2603],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_817b7159c4d731b6e0b75d94e5b22722 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_db3d162f6f6846050823c5f3d4e10e4f = $(`<div id="html_db3d162f6f6846050823c5f3d4e10e4f" style="width: 100.0%; height: 100.0%;">City: Dublin<br>PM2.5: 2.34<br>PM10: 6.84<br>NO2: 7.54</div>`)[0];
+                popup_817b7159c4d731b6e0b75d94e5b22722.setContent(html_db3d162f6f6846050823c5f3d4e10e4f);
+            
+        
+
+        marker_070ed9e7aa4e0d8e857c7a4de43220c9.bindPopup(popup_817b7159c4d731b6e0b75d94e5b22722)
+        ;
+
+        
+    
+    
+            var marker_d7af276bc5433f327de8f7629a6af3b9 = L.marker(
+                [59.9139, 10.7522],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_c69856412d0d707bb80c5aefa7fde171 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_af184fb6776519234f2df131a8b4406d = $(`<div id="html_af184fb6776519234f2df131a8b4406d" style="width: 100.0%; height: 100.0%;">City: Oslo<br>PM2.5: 9.47<br>PM10: 11.81<br>NO2: 18.68</div>`)[0];
+                popup_c69856412d0d707bb80c5aefa7fde171.setContent(html_af184fb6776519234f2df131a8b4406d);
+            
+        
+
+        marker_d7af276bc5433f327de8f7629a6af3b9.bindPopup(popup_c69856412d0d707bb80c5aefa7fde171)
+        ;
+
+        
+    
+    
+            var marker_baa389a3d9b9293ecc8ca8b16e4d9fa6 = L.marker(
+                [41.9028, 12.4964],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_5b801ded4e93cd02ae528e80babb967f = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_6fbda8b782e18373ebaa14e6fd22d1b9 = $(`<div id="html_6fbda8b782e18373ebaa14e6fd22d1b9" style="width: 100.0%; height: 100.0%;">City: Rome<br>PM2.5: 1.23<br>PM10: 1.61<br>NO2: 3.98</div>`)[0];
+                popup_5b801ded4e93cd02ae528e80babb967f.setContent(html_6fbda8b782e18373ebaa14e6fd22d1b9);
+            
+        
+
+        marker_baa389a3d9b9293ecc8ca8b16e4d9fa6.bindPopup(popup_5b801ded4e93cd02ae528e80babb967f)
+        ;
+
+        
+    
+    
+            var marker_04ccc9449fa768f6b61beb9c418f87af = L.marker(
+                [52.2297, 21.0122],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_b956b8cd070d00110e3a04937e83e67d = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_a8eae4bb7090cc83c5c90eab09868aa5 = $(`<div id="html_a8eae4bb7090cc83c5c90eab09868aa5" style="width: 100.0%; height: 100.0%;">City: Warsaw<br>PM2.5: 10.64<br>PM10: 14.49<br>NO2: 14.22</div>`)[0];
+                popup_b956b8cd070d00110e3a04937e83e67d.setContent(html_a8eae4bb7090cc83c5c90eab09868aa5);
+            
+        
+
+        marker_04ccc9449fa768f6b61beb9c418f87af.bindPopup(popup_b956b8cd070d00110e3a04937e83e67d)
+        ;
+
+        
+    
+    
+            var marker_ba313e9a55032a8db8b8114e68a7020b = L.marker(
+                [45.815, 15.9819],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_b85bc5d8b3a7ec874e86310efabf9ca1 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_81f56e7e2557b516cd4dc9da13115396 = $(`<div id="html_81f56e7e2557b516cd4dc9da13115396" style="width: 100.0%; height: 100.0%;">City: Zagreb<br>PM2.5: 6.57<br>PM10: 9.75<br>NO2: 12</div>`)[0];
+                popup_b85bc5d8b3a7ec874e86310efabf9ca1.setContent(html_81f56e7e2557b516cd4dc9da13115396);
+            
+        
+
+        marker_ba313e9a55032a8db8b8114e68a7020b.bindPopup(popup_b85bc5d8b3a7ec874e86310efabf9ca1)
+        ;
+
+        
+    
+    
+            var marker_d92e6b9adc78b080a7c51bf9ab0569ed = L.marker(
+                [13.5127, 2.1126],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_af9b8d19c1ad53a356a537ec3336600b = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_14528a2314284172cde98376c8def19a = $(`<div id="html_14528a2314284172cde98376c8def19a" style="width: 100.0%; height: 100.0%;">City: Niamey<br>PM2.5: 163.54<br>PM10: 573.6<br>NO2: 1.18</div>`)[0];
+                popup_af9b8d19c1ad53a356a537ec3336600b.setContent(html_14528a2314284172cde98376c8def19a);
+            
+        
+
+        marker_d92e6b9adc78b080a7c51bf9ab0569ed.bindPopup(popup_af9b8d19c1ad53a356a537ec3336600b)
+        ;
+
+        
+    
+    
+            var marker_a080a9415715bdd97ef68e8dca623e23 = L.marker(
+                [32.8872, 13.1913],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_d7f1913e7e289167cfbd59f9f6044e47 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_d4b1d2d8cf981c2568955dab7e5b4927 = $(`<div id="html_d4b1d2d8cf981c2568955dab7e5b4927" style="width: 100.0%; height: 100.0%;">City: Tripoli<br>PM2.5: 1.02<br>PM10: 4.72<br>NO2: 0.57</div>`)[0];
+                popup_d7f1913e7e289167cfbd59f9f6044e47.setContent(html_d4b1d2d8cf981c2568955dab7e5b4927);
+            
+        
+
+        marker_a080a9415715bdd97ef68e8dca623e23.bindPopup(popup_d7f1913e7e289167cfbd59f9f6044e47)
+        ;
+
+        
+    
+    
+            var marker_ed43b7520a5db1bf10afd6fdc0b0fd1f = L.marker(
+                [0.3476, 32.5825],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_718fb97ac3cc148bb5bf4b88bb905968 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_f97e68da2153c6755dfa3f27aeed04ca = $(`<div id="html_f97e68da2153c6755dfa3f27aeed04ca" style="width: 100.0%; height: 100.0%;">City: Kampala<br>PM2.5: 17.65<br>PM10: 25.19<br>NO2: 1.65</div>`)[0];
+                popup_718fb97ac3cc148bb5bf4b88bb905968.setContent(html_f97e68da2153c6755dfa3f27aeed04ca);
+            
+        
+
+        marker_ed43b7520a5db1bf10afd6fdc0b0fd1f.bindPopup(popup_718fb97ac3cc148bb5bf4b88bb905968)
+        ;
+
+        
+    
+    
+            var marker_e69b911097f13f3a78947f4bde33e88f = L.marker(
+                [12.6392, -8.0029],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_e4c863da930944bce24a1f0b578fe450 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_79cae393f2291dd2d7f62d5d0a7456fe = $(`<div id="html_79cae393f2291dd2d7f62d5d0a7456fe" style="width: 100.0%; height: 100.0%;">City: Bamako<br>PM2.5: 73.81<br>PM10: 208.8<br>NO2: 0.26</div>`)[0];
+                popup_e4c863da930944bce24a1f0b578fe450.setContent(html_79cae393f2291dd2d7f62d5d0a7456fe);
+            
+        
+
+        marker_e69b911097f13f3a78947f4bde33e88f.bindPopup(popup_e4c863da930944bce24a1f0b578fe450)
+        ;
+
+        
+    
+    
+            var marker_b10f76a77448d4c9e9eee86abc74742b = L.marker(
+                [15.5007, 32.5599],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_58403d17d1d53e5454d092fd5a9cf970 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_1f8ee341607dd62dfbb1951da5b74747 = $(`<div id="html_1f8ee341607dd62dfbb1951da5b74747" style="width: 100.0%; height: 100.0%;">City: Khartoum<br>PM2.5: 22.07<br>PM10: 86.51<br>NO2: 1.14</div>`)[0];
+                popup_58403d17d1d53e5454d092fd5a9cf970.setContent(html_1f8ee341607dd62dfbb1951da5b74747);
+            
+        
+
+        marker_b10f76a77448d4c9e9eee86abc74742b.bindPopup(popup_58403d17d1d53e5454d092fd5a9cf970)
+        ;
+
+        
+    
+    
+            var marker_29aa4ebbbf018001ae560c4094b1b327 = L.marker(
+                [-19.0196, -65.2619],
+                {}
+            ).addTo(map_0e83dae42966ecbb0639564b148f6566);
+        
+    
+        var popup_935720522d0f9bd28ee3e04d85f0d408 = L.popup({"maxWidth": 1000});
+
+        
+            
+                var html_15545d6e841e414d845160196030a783 = $(`<div id="html_15545d6e841e414d845160196030a783" style="width: 100.0%; height: 100.0%;">City: Sucre<br>PM2.5: 2.52<br>PM10: 3.94<br>NO2: 1.14</div>`)[0];
+                popup_935720522d0f9bd28ee3e04d85f0d408.setContent(html_15545d6e841e414d845160196030a783);
+            
+        
+
+        marker_29aa4ebbbf018001ae560c4094b1b327.bindPopup(popup_935720522d0f9bd28ee3e04d85f0d408)
+        ;
+
+        
+    
+</script>
+</html>
